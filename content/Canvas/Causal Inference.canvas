@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"592daaefb650ff41","type":"file","file":"Document/KB-Knowledge Base/KB4-Causal Inference/KB4.1-The Ladder of Causation.md","x":281,"y":95,"width":399,"height":120},
+		{"id":"20e9cb497468fbc8","type":"file","file":"Document/KB-Knowledge Base/KB4-Causal Inference/KB4.2-Causal Model.md","x":281,"y":-180,"width":499,"height":160},
+		{"id":"fe8f362751d1a8ec","type":"text","text":"# **Causal Inference**","x":-120,"y":-20,"width":260,"height":70},
+		{"id":"7822c6fcde4bb460","type":"text","text":"## Mathematics","x":281,"y":-10,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"1b00ad2a3d657673","fromNode":"fe8f362751d1a8ec","fromSide":"right","toNode":"20e9cb497468fbc8","toSide":"left"},
+		{"id":"f65e2b38975f6625","fromNode":"fe8f362751d1a8ec","fromSide":"right","toNode":"592daaefb650ff41","toSide":"left"},
+		{"id":"4be772395d616ac2","fromNode":"fe8f362751d1a8ec","fromSide":"right","toNode":"7822c6fcde4bb460","toSide":"left"}
+	]
+}

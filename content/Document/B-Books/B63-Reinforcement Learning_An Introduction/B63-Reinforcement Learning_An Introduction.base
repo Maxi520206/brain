@@ -1,0 +1,7 @@
+filters:
+  and:
+    - file.name.contains("B63")
+    - '!file.name.contains(".BASE")'
+views:
+  - type: table
+    name: 表格

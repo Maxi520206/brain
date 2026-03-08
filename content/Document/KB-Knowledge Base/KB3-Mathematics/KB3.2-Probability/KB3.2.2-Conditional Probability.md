@@ -1,0 +1,19 @@
+# [[B70C2-Conditional Probability]]
+- **Conditional Probability**
+    - If $A$ and $B$ are events with $P(B) > 0$, the conditional probability of $A$ given $B$ is: $[ P(A|B) = \frac{P(A \cap B)}{P(B)} ]$
+    - **Prior Probability | 先验概率 ($P(A)$)**: The assessment of probability before updating based on evidence $B$.
+    - **Posterior Probability | 后验概率 ($P(A|B)$)**: The updated probability after observing evidence $B$.
+- **Bayes’ rule and the law of total probability**
+    - **Intersection of two events**: $[ P(A \cap B) = P(B)P(A|B) = P(A)P(B|A) ]$
+    - **Intersection of $n$ events | 链式法则**: $[ P(A_1, A_2, \dots, A_n) = P(A_1)P(A_2|A_1)P(A_3|A_1, A_2) \dots P(A_n|A_1, \dots, A_{n-1}) ]$
+    - **Bayes' Rule | 贝叶斯定理**: $[ P(A|B) = \frac{P(B|A)P(A)}{P(B)} ]$
+    - **Bayes' Rule (Odds form)**: $[ \frac{P(A|B)}{P(A^c|B)} = \frac{P(A)}{P(A^c)} \cdot \frac{P(B|A)}{P(B|A^c)} ]$
+    - **Law of Total Probability, LOTP | 全概率公式**: Let $A_1, \dots, A_n$ be a partition of the sample space $S$. Then: $[ P(B) = \sum_{i=1}^n P(B|A_i)P(A_i) ]$
+- **Independence of events**
+    - Two events $A$ and $B$ are independent if: $[ P(A \cap B) = P(A)P(B) ]$
+    - **Equivalent condition**: If $P(B) > 0$, then $A, B$ are independent if and only if $P(A|B) = P(A)$.
+    - **Conditional Independence | 条件独立**: $A$ and $B$ are conditionally independent given $E$ if: $[ P(A \cap B | E) = P(A|E)P(B|E) ]$
+- **Pitfalls and paradoxes**
+    - **Prosecutor's fallacy | 检察官谬误**: Confusing $P(A|B)$ with $P(B|A)$. Specifically, confusing the probability of the evidence given innocence with the probability of innocence given the evidence.
+    - **Defense attorney's fallacy**: Failing to condition on all available evidence (e.g., ignoring that a murder actually occurred).
+    - **Simpson’s paradox | 辛普森悖论**: A phenomenon where a trend appears in several groups of data but disappears or reverses when these groups are combined. This is often caused by a confounding variable.

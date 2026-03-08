@@ -1,0 +1,10 @@
+filters:
+  and:
+    - file.name.contains("B70")
+    - '!file.name.contains(".BASE")'
+views:
+  - type: table
+    name: 表格
+    sort:
+      - property: file.name
+        direction: DESC
